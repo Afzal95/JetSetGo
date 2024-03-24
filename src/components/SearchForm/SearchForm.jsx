@@ -26,7 +26,7 @@ const SearchForm = ({source,destination,setSource,setDestination,onhandleChange,
               onChange={(e) => setDestination(e.target.value.trim())}
               className="w-full md:w-64 px-4 py-2 border border-gray-300 rounded-md focus:outline-none focus:border-blue-500"
             />
-            <input type='date' min={new Date().toISOString().split('T')[0]} className="w-full md:w-64 px-4 py-2 border border-gray-300 rounded-md focus:outline-none focus:border-blue-500" />
+            <input type='date' required min={new Date().toISOString().split('T')[0]} className="w-full md:w-64 px-4 py-2 border border-gray-300 rounded-md focus:outline-none focus:border-blue-500" />
             <button type='submit' className="w-full md:w-auto px-6 py-3 bg-blue-500 text-white rounded-md hover:bg-blue-600 focus:outline-none focus:bg-blue-600">
               Search Flights
             </button>
