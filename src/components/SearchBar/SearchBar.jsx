@@ -128,8 +128,8 @@ const SearchBar = () => {
           </button>
           </div>
       </div>}
-      {filteredDetails?.map(detail => (
-          <FlightDetailCard key={detail.id} detail={detail} />
+      {filteredDetails?.map((detail,index) => (
+          <FlightDetailCard key={index} detail={detail} />
         ))}
       </div>
       </div>
